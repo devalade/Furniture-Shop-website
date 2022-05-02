@@ -13,8 +13,7 @@
     "types": ["vite/client"],
     "baseUrl": "./",
     "paths": {
-      "@Components/*": ["src/components/*"],
-      "@Public/": ["public"]
+      "@Components/*": ["src/components/*"]
     }
   }
 }
