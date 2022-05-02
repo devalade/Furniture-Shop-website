@@ -1,7 +1,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: aladecharaf23@gmail.com
-  deployToRepo: test.github.io
+  deployToRepo: https://github.com/devalade/Furniture-Shop-website.git
 
 name: Github Pages Astro CI
 
