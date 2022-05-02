@@ -1,0 +1,36 @@
+---
+import MenuButton from './MenuButton.astro';
+import Logo from './Logo.astro';
+import RightSideLinks from './RightSideLinks.astro';
+
+const LINK = [
+	{
+		label: 'Sofas',
+		link: '/sofas'
+	}, 
+		{
+		label: 'Chairs',
+		link: '/chairs'
+	}, 
+		{
+		label: 'Deds',
+		link: '/deds'
+	},  
+]
+---
+
+<header class="w-full pt-2">
+	<nav class="grid grid-cols-3   max-w-6xl mx-auto">
+		<!-- internal link  -->
+		<ul class=" w-full place-items-center flex gap-x-6">
+			<li><a href="">
+				<MenuButton />
+			</a></li>
+			{LINK.map((value) => <li><a href={value.link}>{value.label}</a></li>)}
+		</ul>
+		<!-- main logo  -->
+		<Logo />
+		<!-- Right Side links  -->
+		<RightSideLinks />
+	</nav>
+</header>
